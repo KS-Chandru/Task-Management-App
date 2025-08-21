@@ -6,6 +6,7 @@ This is a personal project to showcase React skills.
 ---
 
 ## 🚀 Features
+
 - Add new tasks
 - Mark tasks as complete/incomplete
 - Delete tasks
@@ -15,6 +16,7 @@ This is a personal project to showcase React skills.
 ---
 
 ## 🛠 Tech Stack
+
 - **React** (Vite)
 - **Material-UI (MUI)**
 - **LocalStorage** (for saving tasks)
@@ -22,6 +24,7 @@ This is a personal project to showcase React skills.
 ---
 
 ## 📷 Screenshots
+
 ![App Screenshot](screenshot.png)
 
 ---
@@ -38,3 +41,4 @@ npm install
 
 # Run development server
 npm run dev
+```
