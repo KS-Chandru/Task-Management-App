@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Box, Typography, Container, Divider } from "@mui/material";
+import { Box, Typography, Container, Divider } from "@mui/material";
 import TaskForm from "./components/TaskForm";
+import TaskItem from "./components/TaskItem";
 import TaskItem from "./components/TaskItem";
 
 export default function App() {
