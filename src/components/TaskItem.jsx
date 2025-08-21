@@ -6,14 +6,7 @@ import {
   Typography,
   Box,
 } from "@mui/material";
-import {
-  Card,
-  CardContent,
-  Checkbox,
-  IconButton,
-  Typography,
-  Box,
-} from "@mui/material";
+
 import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function TaskItem({ task, updateTask, deleteTask }) {
@@ -71,8 +64,6 @@ export default function TaskItem({ task, updateTask, deleteTask }) {
         >
           <DeleteIcon />
         </IconButton>
-      </CardContent>
-    </Card>
       </CardContent>
     </Card>
   );

@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { Box, Typography, Container, Divider } from "@mui/material";
-import { Box, Typography, Container, Divider } from "@mui/material";
 import TaskForm from "./components/TaskForm";
-import TaskItem from "./components/TaskItem";
 import TaskItem from "./components/TaskItem";
 
 export default function App() {
@@ -45,7 +43,6 @@ export default function App() {
           background: "rgba(255,255,255,0.85)",
           backdropFilter: "blur(8px)",
           py: 5,
-          px: { xs: 2, sm: 4 },
           minWidth: { xs: "90vw", sm: 400 },
         }}
       >
