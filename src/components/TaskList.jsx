@@ -3,7 +3,7 @@ import TaskItem from "./TaskItem";
 
 export default function TaskList({ tasks, updateTask, deleteTask }) {
   return (
-    <List>
+    <List disablePadding>
       {tasks.map((task) => (
         <TaskItem
           key={task.id}

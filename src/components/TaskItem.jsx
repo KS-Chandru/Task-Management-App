@@ -1,19 +1,5 @@
-import {
-  Card,
-  CardContent,
-  Checkbox,
-  IconButton,
-  Typography,
-  Box,
-} from "@mui/material";
-import {
-  Card,
-  CardContent,
-  Checkbox,
-  IconButton,
-  Typography,
-  Box,
-} from "@mui/material";
+import { Checkbox, IconButton, Typography, Box } from "@mui/material";
+
 import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function TaskItem({ task, updateTask, deleteTask }) {
@@ -21,7 +7,7 @@ export default function TaskItem({ task, updateTask, deleteTask }) {
     updateTask(task.id, { ...task, completed: !task.completed });
 
   return (
-    <Card
+    <Box
       sx={{
         m: 2,
         boxShadow: 3,
@@ -34,7 +20,7 @@ export default function TaskItem({ task, updateTask, deleteTask }) {
         backgroundColor: task.completed ? "#f0f0f0" : "#fff",
       }}
     >
-      <CardContent
+      <Box
         sx={{
           display: "flex",
           alignItems: "center",
@@ -55,9 +41,9 @@ export default function TaskItem({ task, updateTask, deleteTask }) {
               color: task.completed ? "text.secondary" : "text.primary",
               fontWeight: 500,
               fontSize: "1.1rem",
-              whiteSpace: "normal", // Allow text to wrap
-              wordBreak: "break-word", // Break long words
-              maxWidth: { xs: "180px", sm: "320px" }, // Responsive max width
+              whiteSpace: "normal",
+              wordBreak: "break-word",
+              maxWidth: { xs: "180px", sm: "320px" },
               overflow: "hidden",
             }}
           >
@@ -71,9 +57,7 @@ export default function TaskItem({ task, updateTask, deleteTask }) {
         >
           <DeleteIcon />
         </IconButton>
-      </CardContent>
-    </Card>
-      </CardContent>
-    </Card>
+      </Box>
+    </Box>
   );
 }
